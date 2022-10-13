@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import ClassComp from './2022_10_13/ClassComp';
 import Counter from './2022_10_13/Counter';
 import Say from './2022_10_13/Say';
+import Clock from './2022_10_13/Timer';
 import App from './App';
 import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +13,7 @@ root.render(
     {/* <App/> */}
     {/* <ClassComp/> */}
     {/* <Counter/> */}
-    <Say/>
+    {/* <Say/> */}
+    <Clock/>
   </React.StrictMode>
 );
