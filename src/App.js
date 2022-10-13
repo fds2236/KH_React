@@ -1,4 +1,5 @@
 import Comment from './2022_10_13/Comment';
+import Say from './2022_10_13/Say';
 import WelcomeProp from './2022_10_13/WelcomProp';
 import './App.css';
 const comment = {
@@ -18,7 +19,7 @@ function App() {
             date={comment.date}
             text={comment.text}
             author={comment.author}
-            />
+            /> 
         </div>
     )
 }
