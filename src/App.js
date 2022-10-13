@@ -1,5 +1,33 @@
+import Comment from './2022_10_13/Comment';
 import WelcomeProp from './2022_10_13/WelcomProp';
 import './App.css';
+const comment = {
+    date : new Date(),
+    text : "I hope you enjoy learning React!!!",
+    author : {
+        name : "Hello Kitty",
+        avatarUrl : "http://placekitten.com/g/64/64"
+    }
+}
+
+
+function App() {
+    return(
+        <div>
+            <Comment 
+            date={comment.date}
+            text={comment.text}
+            author={comment.author}
+            />
+        </div>
+    )
+}
+export default App;
+
+
+
+
+
 // // 원래 클래스였던 부분인데 작년부터 함수형 프로그램으로 바뀜
 // function App() {
 // const name = "곰돌이사육사";
@@ -18,13 +46,14 @@ import './App.css';
 
 
 // WelcomProp호출
-function App(){
-    return (
-        <div>
-            <WelcomeProp name="천지훈" jobs = "변호사"/>
-            <WelcomeProp name="백마리" jobs = "나도 변호사"/>
-            <WelcomeProp name="서민혁" jobs = "meeeeeeeeeeee too"/>
-            </div>
-    );
-}
-export default App;
+// function App(){
+//     return (
+//         <div>
+//             <WelcomeProp name="정은종" job = "개발자" color = "skyblue" font="1.2em">props.children에 해당</WelcomeProp>
+//             <WelcomeProp name="백마리" job = "변호사" color = "pink" font="1.5em">OKOK</WelcomeProp>
+//             <WelcomeProp name="서민혁" job = "meeeeeeeeeeee too" color = "lightgrey" font="1.8em"/>
+//             <WelcomeProp />
+//             </div>
+//     );
+// }
+// export default App;
