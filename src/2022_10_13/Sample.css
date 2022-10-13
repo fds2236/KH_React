@@ -1,0 +1,21 @@
+.textStyle{
+    background-color: #222;
+    color : royalblue;
+    font-size: 2em;
+}
+
+.title-name{
+    color:royalblue;
+    font-size: 2em;
+
+}
+
+.App {
+    text-align: center;
+  }
+
+  .welcome-text {
+    color: skyblue;
+    font-size: 1.8em;
+
+  }
