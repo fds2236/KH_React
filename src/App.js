@@ -11,7 +11,9 @@ const comment = {
     }
 }
 
-
+// 컴포넌트를 사용할 때 이름은 항상 대문자로 시작해야함
+// function 이름() {JSX문법}
+// export default 이름;
 function App() {
     return(
         <div>
@@ -24,10 +26,6 @@ function App() {
     )
 }
 export default App;
-
-
-
-
 
 // // 원래 클래스였던 부분인데 작년부터 함수형 프로그램으로 바뀜
 // function App() {

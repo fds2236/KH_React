@@ -1,5 +1,9 @@
 // useState 매우 중요......!!!
+// 컴포넌트 트리는 프로터리를 통해 데이터가 흘러갈 수 있는 컴포넌트 계층 구조를 말함
+// 리액트는 흐르는 데이터에 따라 다르게 컴포넌트가 렌더링됨
+// 이러한 렌더링에 영향이 가는 데이터를 state라고 부르며 상태가 변화하면 컴포넌트 트리를 타고 흘러 다시 재렌더링됨
 import { useState } from "react";
+// 새로운 state변수를 선언
 const Say = () => {
     const [message, setMessage] = useState('');
     const onClickEnter = () => setMessage("Welcome!!!");
