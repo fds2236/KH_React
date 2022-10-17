@@ -16,7 +16,7 @@ const Event4 = () => {
                     <option value="apple">사과</option>
                     <option value="banana">바나나</option>
                     <option value="grape">포도</option>
-                    <option value="watermelon">키위</option>
+                    <option value="watermelon">수박</option>
                 </select>
             </label>
             <button type="submit">제출</button>

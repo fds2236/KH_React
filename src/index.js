@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ClassComp from './2022_10_13/ClassComp';
-import Counter from './2022_10_13/Counter';
-import Say from './2022_10_13/Say';
-import Clock from './2022_10_13/Timer';
-import App from './App';
-import './index.css';
+import './Array.css'
+// import Event from './2022_10_17/Event';
+// import Event2 from './2022_10_17/Event2';
+// import InputTest from './2022_10_17/Event2';
+// import Event3 from './2022_10_17/Event3';
+// import Event4 from './2022_10_17/Event4';
+// import Event5 from './2022_10_17/Event5';
+// import ArrayList from './2022_10_17/ArrayList';
+import ArrayMap from './2022_10_17/ArrayMap';
+// import Array from './2022_10_17/Array';
+
+
+
 // ReactDOM에는 render메서드가 내장되어있어서 리액트 엘리먼트를 렌더링할 수 있음
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +23,15 @@ root.render(
     {/* <ClassComp/> */}
     {/* <Counter/> */}
     {/* <Say/> */}
-    <Clock/>
+    {/* <Event/> */}
+    {/* import이름이 꼭 파일 이름과 같지 않아도 됨 */}
+    {/* <Event2/> 이렇게 써도 되고  <InputTest/> 이렇게 써도 됨 위 아래 이름만 맞춰주고 from 경로에 파일 이름만 잘 적어주면 된다 */}
+    {/* <Event3/> */}
+    {/* <Event4/> */}
+    {/* <Event5/> */}
+    {/* <ArrayList/> */}
+    <ArrayMap/>
+    {/* <Array/> */}
   </React.StrictMode>
 );
+
