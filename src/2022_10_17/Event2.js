@@ -13,7 +13,7 @@ const Event2 = () => {
         if(e.key === "Enter") {
             onClick();
         }
-    }
+    } 
     return(
         <div>
         <h1>이벤트 연습</h1>

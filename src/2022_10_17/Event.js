@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 const Event = () => {
     const [message, setMessage] = useState(''); // hook 걸어서 사용하겠다
     const [color, setColor] = useState("black");
