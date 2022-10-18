@@ -3,7 +3,7 @@
 // let newArr = arr.map(e => e * 3);
 
 import { useState } from "react";
-
+import '../App.css'
 const ArrayMap = () => {
     // 1번 예시
     // const numbers = [1,2,3,4,5,6,7]
@@ -42,11 +42,11 @@ const ArrayMap = () => {
         const [names, setNames] = useState ([
             {id:1, text:"청소하기"},
             {id:2, text:"점심먹기"},
-            {id:3, text:"산책하기"},
-            {id:4, text:"공부하기"},
+            {id:3, text:"강아지랑 산책하기"},
+            {id:4, text:"리액트 공부하기"},
         ]);
         const [inputText, setInputText] = useState("");
-        const [nextId, setNextId] = useState(5);
+        const [nextId, setNextId] = useState(6);
         const onChange = e => setInputText(e.target.value); // 인풋창에서 입력받는 값
         const onClick = () => { // concat은 이어 붙이는 것(배열 갱신은 push, 새로 만드는 것은 concat)
             // 기존의 names에다가 concat으로 새로운 배열 추가
@@ -58,16 +58,28 @@ const ArrayMap = () => {
             setNames(nextNames);
             setInputText('');
         };
-        const namesList = names.map(name => <li key={name.id}>{name.text}</li>);
+        // const namesList = names.map(name => <li key={name.id}>{name.text}</li>);
+
+
+        const onRemove = id => {
+            const nextNames = names.filter(name => name.id !== id);
+            setNames(nextNames);
+        }
+
+        const namesList = names.map(name => (
+            <li key={name.id} onDoubleClick={()=> onRemove(name.id)}>{name.text}</li>
+        ))
 
         return (
             <div>
+                <p className="title-name">To do List</p>
                 <input value={inputText} onChange={onChange} />
                 <button onClick={onClick}>추가</button>
+                <p>삭제는 해당 항목을 더블 클릭 하세요</p>
+                <ul>{namesList}</ul>
             </div>
         )
     }
-
 
 export default ArrayMap;
 

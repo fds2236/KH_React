@@ -1,38 +1,20 @@
-.App {
+.App{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title-name{
+  padding: 5px;
+  width: 150px;
+  height: 40px;
+  background-color: lightskyblue;
+  font-size: 2em;
+  color:white;  
+  border: 10px double white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* react는 뷰관점에서만 보여짐
+useState 자동으로 보여줌(내부 상태가 바뀔 때)
+useeffect(서버가 날려줄 때, 화면 업데이트가 필요할 때)
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+usecallback과 usememo는 언제 안보여줄꺼냐
+useeffect */

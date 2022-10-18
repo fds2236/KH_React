@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './Array.css'
+// import Card from './2022_10_17/UseState';
+// import './Array.css'
 // import Event from './2022_10_17/Event';
 // import Event2 from './2022_10_17/Event2';
 // import InputTest from './2022_10_17/Event2';
@@ -8,10 +9,12 @@ import './Array.css'
 // import Event4 from './2022_10_17/Event4';
 // import Event5 from './2022_10_17/Event5';
 // import ArrayList from './2022_10_17/ArrayList';
-import ArrayMap from './2022_10_17/ArrayMap';
+// import ArrayMap from './2022_10_17/ArrayMap';
 // import Array from './2022_10_17/Array';
 
-
+// import Effect from './2022_10_18/UseEffect';
+// import Reducer from './2022_10_18/UseReduce';
+import Memo from './2022_10_18/UseMemo';
 
 // ReactDOM에는 render메서드가 내장되어있어서 리액트 엘리먼트를 렌더링할 수 있음
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -30,8 +33,12 @@ root.render(
     {/* <Event4/> */}
     {/* <Event5/> */}
     {/* <ArrayList/> */}
-    <ArrayMap/>
+    {/* <ArrayMap/> */}
     {/* <Array/> */}
+    {/* <Card/> */}
+   {/* <Effect/> */}
+   {/* <Reducer/> */}
+   <Memo/>
   </React.StrictMode>
 );
 

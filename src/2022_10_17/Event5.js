@@ -1,6 +1,6 @@
 import { useState } from "react";
 const Event5 = () => {
-    const[value, setValue] = useState('270');
+    const[value, setValue] = useState('220');
     const handleChange = (event) => {
         setValue(event.target.value);
     }
@@ -11,7 +11,8 @@ const handleSubmit = (event) => {
 }
 
 return (
-    <form onSubmit={handleSubmit}>
+<>
+<form onSubmit={handleSubmit}>
         <label>사이즈를 선택하세요
             <select value={value} onChange={handleChange}>
                 <option value="220">220</option>
@@ -25,6 +26,10 @@ return (
         </label>
         <button type="submit">확인</button>
     </form>
+
+    <h1></h1>
+</>
+
 );
 }
 
